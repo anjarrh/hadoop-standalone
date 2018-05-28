@@ -47,7 +47,7 @@ Path Java /usr/bin/java merupakan symlink ke /etc/alternatives/java yang merupak
 readlink -f /usr/bin/java | sed "s:bin/java::"
 ```
 Menggunakan readlink dengan flag -f untuk mengikuti symlink disetiap path secara recursive. Lalu menggunakan sed untuk memotong bin/java dari keluaran agar mengeluarkan nilai yang benar untuk JAVA_HOME.
-![Hasilnya Hadoop Java Path](https://github.com/anjarrh/hadoop-standalone/blob/README/hadoopjava.png "Hasil Hadoop Java Path")
+![Hasilnya Hadoop Java Path](https://github.com/anjarrh/hadoop-standalone/blob/master/hadoopjava.png "Hasil Hadoop Java Path")
 * Buka file hadoop-env.sh
 ```
 sudo nano /usr/local/hadoop/etc/hadoop/hadoop-env.sh
@@ -61,14 +61,14 @@ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-i386/jre/
 ... 
 ```
 2. Menggunakan nilai dinamik, dengan readlink
-![hadoopdynamicval](https://github.com/anjarrh/hadoop-standalone/blob/README/hadoopdynamicval.png "Hadoop Dynamic Value")
+![hadoopdynamicval](https://github.com/anjarrh/hadoop-standalone/blob/master/hadoopdynamicval.png "Hadoop Dynamic Value")
 
 ## Jalankan Hadoop ##
 * Menjalankan perintah berikut
 ```
 /usr/local/hadoop/bin/hadoop
 ```
-![Hasil Menjalankan Hadoop](https://github.com/anjarrh/hadoop-standalone/blob/README/hadooprun.png "Hasil Menjalankan Hadoop")
+![Hasil Menjalankan Hadoop](https://github.com/anjarrh/hadoop-standalone/blob/master/hadooprun.png "Hasil Menjalankan Hadoop")
 * Menjalankan contoh MapReduce
 ```
 mkdir ~/input
@@ -83,9 +83,9 @@ Jika telah berhasil akan terlihat summary proses yang dilakukan.
 ```
 cat ~/grep_example/*
 ```
-![Hasil Menjalankan MapReduce](https://github.com/anjarrh/hadoop-standalone/blob/README/hadoopmapreduce1.png "Hasil Menjalankan MapReduce")
+![Hasil Menjalankan MapReduce](https://github.com/anjarrh/hadoop-standalone/blob/master/hadoopmapreduce1.png "Hasil Menjalankan MapReduce")
 
-![Hasil Menjalankan MapReduce](https://github.com/anjarrh/hadoop-standalone/blob/README/hadoopmapreduce2.png "Hasil Menjalankan MapReduce")
+![Hasil Menjalankan MapReduce](https://github.com/anjarrh/hadoop-standalone/blob/master/hadoopmapreduce2.png "Hasil Menjalankan MapReduce")
 
 Referensi :
 * https://www.digitalocean.com/community/tutorials/how-to-install-hadoop-in-stand-alone-mode-on-ubuntu-16-04
