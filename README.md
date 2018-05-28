@@ -24,7 +24,7 @@ sudo apt-get install default-jdk
 ```
 java -version
 ```
-![Versi Java](https://github.com/anjarrh/hadoop-standalone/blob/README/jdkversion.png "JDK Version")
+![Versi Java](https://github.com/anjarrh/hadoop-standalone/blob/master/jdkversion.png "JDK Version")
 
 ## Instalasi Hadoop ##
 * Cek versi Hadoop terbaru yang akan digunakan, pada praktikum ini menggunakan hadoop-2.8.4 di web http://hadoop.apache.org/releases.html
